@@ -1,1 +1,1 @@
-return "sssss"
+return "yes"
