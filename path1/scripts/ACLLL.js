@@ -1,5 +1,6 @@
 /** Script ACLs do not delete 
- write=authenticated
+ read=nobody 
+write=authenticated
 execute=authenticated 
   **/ 
  
