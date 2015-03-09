@@ -1,6 +1,6 @@
 /** Script ACLs do not delete 
- read=
-write=nobody
+ write=authenticated
 execute=authenticated 
   **/ 
+ 
 return "hellozzzzz"
