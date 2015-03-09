@@ -3,4 +3,4 @@
 write=nobody
 execute=authenticated 
   **/ 
- return "999999"   							
+ return "12345"   							
