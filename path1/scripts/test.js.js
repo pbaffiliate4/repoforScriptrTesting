@@ -3,4 +3,4 @@
 write=nobody
 execute=authenticated 
   **/ 
- return "zigui"   							
+ return "ziguiModified"   							
