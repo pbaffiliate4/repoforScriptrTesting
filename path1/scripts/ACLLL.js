@@ -4,4 +4,4 @@ write=authenticated
 execute=authenticated 
   **/ 
  
-return "hellozzzzz"
+return "no"
