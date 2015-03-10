@@ -1,6 +1,6 @@
 /** Script ACLs do not delete 
- read=nobody 
-write=nobody
+ d=nobody 
+ite=nobody
 execute=authenticated 
   **/ 
  return "222"   							
