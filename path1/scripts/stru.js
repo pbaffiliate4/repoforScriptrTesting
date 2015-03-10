@@ -1,6 +1,6 @@
 /** Script ACLs do not delete 
- read=nobody 
-write=nobody
+ ad=nobody 
+te=nobody
 execute=authenticated 
   **/ 
  return "no bug"   							
