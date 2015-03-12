@@ -1,7 +1,8 @@
 /** Script ACLs do not delete 
  read=nobody 
 write=nobody
-execute=authenticated 
+execute=nobody 
   **/ 
+ 
  
  return "6"   							
