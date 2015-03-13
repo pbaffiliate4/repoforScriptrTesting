@@ -1,6 +1,6 @@
 /** Script ACLs do not delete 
- read=nob 
-write=nob
+ ad=nob 
+ite=nob
 execute=nobody 
   **/ 
  return "zigui"   							
