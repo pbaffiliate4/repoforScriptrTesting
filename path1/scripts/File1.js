@@ -1,7 +1,8 @@
 /** Script ACLs do not delete 
  read=nobody 
-ite=nob
+write=authenticated
 execute=authenticated 
   **/ 
+ 
 
  return "1"   							
