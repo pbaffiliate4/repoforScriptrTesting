@@ -1,6 +1,6 @@
 /** Script ACLs do not delete 
  read=nobody 
-write=nob
+ite=nob
 execute=authenticated 
   **/ 
 
