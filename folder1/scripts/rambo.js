@@ -3,4 +3,6 @@
 write=nobody
 execute=anonymous 
   **/ 
- return "nope";   							
+ console.log("{ \"<b>name</b>\" : \"julien\" }");
+
+return "nod fskdjfhskdjfhskdjf jskdfh sdjkfkpe";   				   				   							

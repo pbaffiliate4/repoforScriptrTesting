@@ -1,6 +1,6 @@
 /** Script ACLs do not delete 
  read=nobody 
 write=nobody
-execute=nobody 
+execute=authenticated 
   **/ 
-return lalala;
+ return "the one i will always";   							
