@@ -1,7 +1,7 @@
 /** Script ACLs do not delete 
  read=nobody 
 write=nobody
-execute=authenticated 
+execute=anonymous 
   **/ 
- return "i got the shivers in me knee bone";
-			
+ return "i got the shiversfffffffffffffffffffffffffffff in me knee bone";
+						
