@@ -7,7 +7,7 @@ execute=authenticated
 var http = require("http");
 
 /**
- * a simple wrapper on Google Analytics's APIs
+ * a simple wrapper on Google Analytics's APIsssssssssss
  * @class GoogleAnalyticsClient
  * @constructor GoogleAnalyticsClient
  * @param {String} tid : (mendatory), the tracking id given by google 
