@@ -1,0 +1,47 @@
+ var userClient = require("../userClient");
+
+try {
+  var user = new userClient.FitbitUser({username:"Karim"});
+  var data = {
+  // "userInfo": user.getInfo(),
+   "devices": user.listDevices(),
+//  "planned and logged activities today": user.getActivities({"date": "2016-06-03"}),
+ //  "heart rate today": user.getHeartRate({"date": "toDay", "period": "7d"}),
+  // "steps walked today": user.getWalkedSteps({"date": "ddd", "period": "7d"}),
+//   "distance walked today": user.getWalkedDistance({"date": "today", "period": "7d"}),
+ //  "steps walked this week": user.getWalkedSteps({"date": "today", "period": "1w"}), 
+  // "minutes sedentary today": user.getMinutesSedentary({"date": "today", "period": "1d"}),
+ //  "minutes lightly active today": user.getMinutesLightlyActive({"date": "today", "period": "7d"}),
+  // "minutes fairly active today": user.getMinutesFairlyActive({"date": "2016-01-09", "period": "1y"}),
+ //  "minutes very active today": user.getMinutesVeryActive({"date": "today", "period": "3m"}),
+ //  "minutes very active this week": user.getMinutesVeryActive({"date": "today", "period": "1y"}),
+  // "minutes asleep today": user.getMinutesAsleep({"fromDate": "2016-01-01", "toDate": "2016-06-03"}),
+ //  "sleep efficiency today": user.getSleepEfficiency({"fromDate": "2015-01-01", "toDate": "2016-06-03"}), //(returned 0)
+//   "calories spent today": user.getSpentCalories({"fromDate": "2015-06-30", "toDate": "today"})
+  };
+  
+  var device = user.getDevice(data.devices[0].id);
+  data["alarms"] =  device.getAlarms();
+  
+  var alarmConfig = {
+    "enabled": true,
+    "recurring": false,
+    "time": "10:51+03:00"
+  };
+  
+  var alarm = device.addAlarm(alarmConfig);
+  data["alarm"] =  alarm;
+  
+  alarmConfig["alarmId"] = "alarm.alarmId";
+  alarmConfig["time"] =  "11:50+03:00";
+  alarmConfig["snoozeLength"] = 1;
+  alarmConfig["snoozeCount"] = 2;
+  alarm = device.updateAlarm(alarmConfig);
+  data["updatedAlarm"] =  alarm;
+  
+  var deletedAlarm = device.deleteAlarm(111111);
+ data["deletedAlarm"] = deletedAlarm;
+  return data;
+}catch(exception){
+  return exception;
+}
